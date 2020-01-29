@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if result != None %}
+<div class="center">
+  <img src="data:image/png;base64,{{ result }}"\>
+</div>
+{% endif %}
+{% endblock %}

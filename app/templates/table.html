@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<table class="table table-bordered">
+    <thead class="thead-dark">
+      <tr>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in for_i %}
+      <tr>
+        {% for j in row %}
+        <th>{{ j }}</th>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
